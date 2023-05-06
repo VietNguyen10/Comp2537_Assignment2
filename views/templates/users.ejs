@@ -1,0 +1,12 @@
+
+<li>
+    <%= user.username %>: <%= user.user_type %>
+    <form class="py-5" action = "/promote/<%=user.username%>" method = "post" style="display: inline;">
+        <button class="btn btn-primary rounded-pill px-3" type="submit">Promote</button>
+    </form>
+    <form class="py-5" action = "/demote/<%=user.username%>" method = "post" style="display: inline;">
+        <button class="btn btn-danger rounded-pill px-3" type="submit">Demote</button>
+    </form>
+</li>
+<br>
+  
